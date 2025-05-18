@@ -1,0 +1,7 @@
+{
+  "dependencies": ["."],
+  "graphs": {
+    "agent": "./{{cookiecutter.package_name}}/agent.py:graph"
+  },
+  "env": ".env"
+}

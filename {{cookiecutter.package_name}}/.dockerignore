@@ -1,0 +1,16 @@
+.venv
+tests
+.flake8
+README.md
+.gitignore
+.dockerignore
+.git
+.idea
+**/__pycache__
+DockerFile
+.DS_Store
+docker-compose.yml
+.env
+.example.env
+.mypy_cache
+.pytest_cache

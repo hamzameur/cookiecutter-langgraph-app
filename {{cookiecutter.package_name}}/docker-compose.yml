@@ -1,0 +1,8 @@
+services:
+  {{cookiecutter.package_name}}:
+    build: .
+    ports:
+      - "{{cookiecutter.langgraph_app_port}}:{{cookiecutter.langgraph_app_port}}"
+    env_file:
+      - .env
+    restart: always
