@@ -34,7 +34,7 @@ cd <your-package-name>
 ```sh
 docker-compose up --build
 ```
-Visit "https://smith.langchain.com/studio/?baseUrl=http://127.0.0.1:<your-port>" to play with the sample agent.
+Visit "https://smith.langchain.com/studio/?baseUrl=http://127.0.0.1:2024" (replace **with your own port**) to play with the sample agent.
 
 5. DEV: install dependencies
 
