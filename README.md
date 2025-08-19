@@ -7,9 +7,8 @@ This repository proposes a boilerplate to create langgraph projects in few click
 ## Prerequisites
 You must have the following tools installed : 
 1. [cookiecutter](https://github.com/cookiecutter/cookiecutter?tab=readme-ov-file#installation) 
-2. python >= 3.12.1 : use [pyenv](https://github.com/pyenv/pyenv?tab=readme-ov-file#installation) to manage python versions efficiently
+2. [uv](https://docs.astral.sh/uv/#installation) to manage python versions and virtual environments efficiently
 3. [docker](https://docs.docker.com/engine/install/) and [docker-compose](https://docs.docker.com/compose/install/)
-4. [poetry](https://python-poetry.org/docs/#installation)
 
 ## Quick-start
 
@@ -39,7 +38,7 @@ Visit "https://smith.langchain.com/studio/?baseUrl=http://127.0.0.1:2024" (repla
 5. DEV: install dependencies
 
 ```sh
-poetry install
+uv sync
 ```
 
 7. (optional) create git repository
