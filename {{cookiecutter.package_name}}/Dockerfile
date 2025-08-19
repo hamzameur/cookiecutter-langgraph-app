@@ -1,10 +1,8 @@
+FROM ghcr.io/astral-sh/uv:0.7.13-python3.12-bookworm as builder
 
-FROM python:3.12.1-slim as builder
-
-RUN pip install poetry==1.8.1
 WORKDIR /{{cookiecutter.package_name}}
-COPY pyproject.toml poetry.lock ./
-RUN poetry export -f requirements.txt --without-hashes -o requirements.txt
+COPY pyproject.toml uv.lock ./
+RUN uv export --frozen --no-editable --no-emit-project --no-dev --no-hashes --format requirements-txt > requirements.txt
 
 FROM python:3.12.1-slim as final
 WORKDIR /{{cookiecutter.package_name}}
